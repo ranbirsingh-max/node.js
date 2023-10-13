@@ -1,5 +1,5 @@
-const fs = require ("fs");
- fs.readFile("./message.txt","utf8" ,(err,data) => {
+const fs = require ("fs")
+fs.writeFile("message.txt","Hye my name is Ranbir",(err) => {
     if (err) throw err;
-    console.log(data);
-  }); 
+    console.log('The file has been saved!');
+  });
